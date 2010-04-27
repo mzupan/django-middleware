@@ -21,6 +21,11 @@ Add the following to the tuple
 
     django-middleware.allowedips.AllowedIPS
 
+### Ajax Errors
+
+Add the following to the tuple
+
+    django-middleware.error.AjaxErrorMiddleware
 
 ## Usage
 
@@ -46,3 +51,7 @@ This is middleware to protect the whole site from all IPs but the ones that are 
     )
 
 So it can handle a single IP or a class of IPs
+
+### Ajax Error
+
+No real use for this.. just add it and if your project is in DEBUG mode then it will print out errors to console when you use runserver
